@@ -1,12 +1,11 @@
-import { UserInfo, ageCalc } from './../src/galaxy.js'
+import { UserInfo } from './../src/galaxy.js'
 
 // Begin test for ageCalc
 describe('ageCalc', () => {
   test('Should fail if user age !== 41.66', () => {
-    let userAge = 29;
-    let planetChoice = 2;
-    let lifeExp = 10;
-    expect(ageCalc(userAge, planetChoice, lifeExp).toFixed(2)).toEqual("46.77");
+    let newUser = new UserInfo(29, 1, 75);
+    let userAge = newUser.ageCalc()
+    expect(userAge.toFixed(2)).toEqual("46.77");
   });
 });
 
