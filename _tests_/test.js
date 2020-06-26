@@ -24,7 +24,7 @@ describe('outPut', () => {
   test('Should fail if it doesn not output an array', () => {
     let newUser = new UserInfo(29, 1, 75);
     let userValues = Object.values(newUser);
-    let output = ageCalc(userValues[0], userValues[1], userValues[2])
-    console.log(output[1]);
+    let message = [];
+    console.log(ageCalc(userValues[0], userValues[1], userValues[2]));
   });
 });

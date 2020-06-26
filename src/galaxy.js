@@ -5,9 +5,6 @@ export class UserInfo {
     this.planetChoice =  planetChoice;
     this.lifeExp = lifeExp;
   }
-  values(){
-
-  }
 }
 
 // Begin Behavior 1
@@ -20,17 +17,17 @@ export function  ageCalc(input, planetChoice, lifeExp) {
 
 //Begin Mercury
   if (planetChoice === 1){
-    let outputArr = [];
+    let message = [];
     let lifeRemainder = (lifeExp - input) / .24;
     if(input > lifeExp){
       let exceedBy = (input - lifeExp) / .24;
-      outputArr.push(`You would be ${ mercAge.toFixed(2) } years old on Mercury.`);
-      outputArr.push(`Congrats! You've lived ${ exceedBy.toFixed(2) } Mercurial Years longer than expected!`)
-      return outputArr;
-    } else if (input < lifeExp) {
-      outputArr.push(`You would be ${ mercAge.toFixed(2) } years old on Mercury.
+      message.push(`You would be ${ mercAge.toFixed(2) } years old on Mercury.`)
+      message.push(`Congrats! You've lived ${ exceedBy.toFixed(2) } Mercurial Years longer than expected!`)
+      return message;
+    } else if ( input < lifeExp) {
+      message.push(`You would be ${ mercAge.toFixed(2) } years old on Mercury.
       You would have ${ lifeRemainder.toFixed(2) } Mercurial years left to live`);
-      return outputArr
+      return message;
     }
   }
 //Begin Venus
