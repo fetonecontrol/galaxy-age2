@@ -1,12 +1,29 @@
-# _{Application Name}_
+# _{Frederick Ernest}_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _{Calculate users age as if they lived on anther planet, {6-26-20}_
 
-#### By _**{List of contributors}**_
+#### By _**{Frederick Ernest}**_
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+Behavior 1 : Return users age in another plannets years. Will divide age on earth by age on planet for calculation
+* Input: User age on is Earth = 10
+Output:
+* Age on Mercury: 41.666 years old
+* Age on Venus: 16.129 years old
+* Age on Mars: 5.319 years old
+* Age on Jupiter: 0.843 years old
+
+Behavior 2 : Return life expectancy to user based on average life expectancy for user.
+
+* Input : User age is 10. User life expectancy is 70
+* Output : User life expectancy is 60 remaining yeaars.
+
+Behavior 3 : If user has outlived life expectancy, return years outlived
+
+* Input : User age is 80. Life expectancy is 60
+* Output : Congrats! Ya made it! You've outlived your life expectancy by 20 years! Donate remaining excess years to the state for a tax credit?
+
 
 ## Setup/Installation Requirements
 
