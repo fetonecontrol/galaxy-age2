@@ -5,7 +5,7 @@ export class UserInfo {
     this.planetChoice =  planetChoice;
     this.lifeExp = lifeExp;
   }
-}
+};
 
 // Begin Behavior 1
 export function  ageCalc(input, planetChoice, lifeExp) {

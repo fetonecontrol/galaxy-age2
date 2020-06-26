@@ -2,11 +2,11 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 import './galaxy.js';
-import { UserInfo, ageCalc } from './../src/galaxy.js'
+import { UserInfo, } from './../src/galaxy.js'
 // import $ from 'jquery';
 
-let newUser = new UserInfo(29, 1, 10);
-let userValues = Object.values(newUser);
-let  output = ageCalc(userValues[0], userValues[1], userValues[2])
+const newUser = new UserInfo(29, 3, 10);
+const userValues = Object.values(newUser);
+let output = newUser.ageCalc;
 console.log(output[0]);
 console.log(output[1]);
