@@ -1,3 +1,11 @@
+//Begin UserInfo Class
+export class UserInfo {
+  constructor(age){
+    this.age = age;
+    console.log(this.age);
+  }
+}
+
 // Begin Behavior 1
 export function  ageCalc(input) {
   let mercAge = input/ .24;
