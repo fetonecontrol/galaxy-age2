@@ -4,9 +4,9 @@ import { UserInfo, ageCalc } from './../src/galaxy.js'
 describe('ageCalc', () => {
   test('Should fail if user age !== 41.66', () => {
     let userAge = 29;
-    let planetChoice = 1;
+    let planetChoice = 2;
     let lifeExp = 10;
-    expect(ageCalc(userAge, planetChoice, lifeExp).toFixed(2)).toEqual("120.83");
+    expect(ageCalc(userAge, planetChoice, lifeExp).toFixed(2)).toEqual("46.77");
   });
 });
 
