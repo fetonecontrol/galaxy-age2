@@ -8,24 +8,24 @@ export class UserInfo {
 
 // Begin Behavior 1
 export function  ageCalc(input, planetChoice) {
+  let mercAge = input/ .24;
+  let venusAge = input / .62;
+  let marAge = input / 1.88;
+  let jupAge = input / 11.86;
   if (planetChoice === 1){
-    let mercAge = input/ .24;
     console.log(`You would be ${ mercAge.toFixed(2) } years old on Mercury.`);
     return mercAge;
   }
-  if (planetChoice === 1){
-    let venusAge = input / .62;
-    console.log(`You would be ${ mercAge.toFixed(2) } years old on Mercury.`);
+    else if (planetChoice === 2){
+    console.log(`You would be ${ venusAge.toFixed(2) } years old on Venus.`);
     return venusAge;
-  }
-  if (planetChoice === 1){
-    let marAge = input / 1.88;
-    console.log(`You would be ${ mercAge.toFixed(2) } years old on Mercury.`);
+    }
+    else if (planetChoice === 3){
+    console.log(`You would be ${ marAge.toFixed(2) } years old on Mars.`);
     return marAge;
-  }
-  if (planetChoice === 1){
-    let jupAge = input / 11.86;
-    console.log(`You would be ${ mercAge.toFixed(2) } years old on Mercury.`);
+    }
+    else if (planetChoice === 4){
+    console.log(`You would be ${ jupAge.toFixed(2) } years old on Jupiter.`);
     return jupAge;
   }
 
