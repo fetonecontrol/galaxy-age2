@@ -1,60 +1,54 @@
-# _{Syllable}_
+# _{Frederick Ernest}_
 
-#### _{syllable counting app}, {6/24/2020}_
+#### _{Calculate users age as if they lived on anther planet, {6-26-20}_
 
-#### By  **Megan Hepner** **Frederick Ernest**
+#### By _**{Frederick Ernest}**_
 
 ## Description
 
-This is an application for the game Sudoku fill the rows, columns and squares with values 1-9, no repeated values within the same line or square.
+Behavior 1 : Return users age in another plannets years. Will divide age on earth by age on planet for calculation
+* Input: User age on is Earth = 10
+Output:
+* Age on Mercury: 41.666 years old
+* Age on Venus: 16.129 years old
+* Age on Mars: 5.319 years old
+* Age on Jupiter: 0.843 years old
+
+Behavior 2 : Return life expectancy to user based on average life expectancy for user.
+
+* Input : User age is 10. User life expectancy is 70
+* Output : User life expectancy is 60 remaining yeaars.
+
+Behavior 3 : If user has outlived life expectancy, return years outlived
+
+* Input : User age is 80. Life expectancy is 60
+* Output : Congrats! Ya made it! You've outlived your life expectancy by 20 years! Donate remaining excess years to the state for a tax credit?
+
 
 ## Setup/Installation Requirements
 
-* to use this content, first click the green clone button above and copy the link to your clipboard 
-* in your terminal run the command "git clone (GitHub url)" to clone the directory to your computer
-* you will need Node.js to run commands, go [here](https://nodejs.org/en/) to install the latest version
-* with Node.js installed, in your terminal (not in the node.js terminal) run the command npm install
-* after install open the files in your code editor
+* _This is a great place_
+* _to list setup instructions_
+* _in a simple_
+* _easy-to-understand_
+* _format_
 
-## Specs
-
-Behavior 1 : refuse anything but alphabetical characters, with the exception of an apostraphy.
-Input: !@#
-Output: Please enter word or series of words.
-
-Behavior 2 : Split string of words into an array.
-Input: "One day I walked the dog"
-Output: inputArray = ["One", "day", "I", "walked", "the", "dog"]
-
-
+_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
 
 ## Known Bugs
 
-_{No Known Bugs}_
+_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
 
 ## Support and contact details
 
-Contact us at Megan Hepner @ megan.hepner@gmail.com and Frederick Ernest @ frederick.ernest@gmail.com
+_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
 
 ## Technologies Used
 
-* HTML
-* CSS
-* jQuery
-* JavaScript
-* webpack
-* webpack-cli
-* style-loader
-* webpack-dev-server
-* eslint
-* eslint-loader
-* webpack-plugin
-* uglifyjs-webpack-plugin
-* html-webpack-plugin
-* clean-webpack-plugin
-* popper.js
-* bootstrap
+_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
 
-### Open source under the MIT licence.
+### License
 
-Copyright (c) 2020 **Megan Hepner**, **Frederick Ernest**
+*{Determine the license under which this application can be used.  See below for more details on licensing.}*
+
+Copyright (c) 2016 **_{List of contributors or company name}_**
