@@ -1,11 +1,32 @@
-import { UserInfo, ageCalc } from './../src/galaxy.js'
+import { UserInfo } from './../src/galaxy.js'
 
 //Begin test for ageCalc
-describe('ageCalc', () => {
-  test('Should fail if user age !== 120.83', () => {
+describe('mercAge', () => {
+  test('Should fail if mercAge is not 120.83', () => {
     let newUser = new UserInfo(29, 1, 10);
-    let return1 = newUser.ageCalc();
-    expect(return1).toEqual(true);
+    newUser.ageCalc();
+    expect(newUser.ages[0]).toEqual("120.83");
+  });
+});
+describe('venusAge', () => {
+  test('Should fail if mercAge is not 46.77', () => {
+    let newUser = new UserInfo(29, 1, 10);
+    newUser.ageCalc();
+    expect(newUser.ages[1]).toEqual("46.77");
+  });
+});
+describe('marsAge', () => {
+  test('Should fail if mercAge is not 15.43', () => {
+    let newUser = new UserInfo(29, 1, 10);
+    newUser.ageCalc();
+    expect(newUser.ages[2]).toEqual("15.43");
+  });
+});
+describe('jupAge', () => {
+  test('Should fail if mercAge is not 2.45', () => {
+    let newUser = new UserInfo(29, 1, 10);
+    newUser.ageCalc();
+    expect(newUser.ages[3]).toEqual("2.45");
   });
 });
 
@@ -18,13 +39,3 @@ describe('UserInfo', () => {
     expect(newUser.lifeExp).toEqual(75);
   });
 });
-
-// Begin test for Output
-// describe('outPut', () => {
-//   test('Should fail if it doesn not output an array', () => {
-//     let newUser = new UserInfo(29, 1, 75);
-//     let userValues = Object.values(newUser);
-//     let message = ageCalc(userValues[0], userValues[1], userValues[2])
-//     console.log(message[0], message[1]);
-//   });
-// });

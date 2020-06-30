@@ -4,6 +4,7 @@ export class UserInfo {
     this.age = age;
     this.planetChoice =  planetChoice;
     this.lifeExp = lifeExp;
+    this.ages = [];
   }
   // Begin Behavior 1
   ageCalc() {
@@ -11,8 +12,10 @@ export class UserInfo {
   let venusAge = this.age / .62;
   let marAge = this.age / 1.88;
   let jupAge = this.age / 11.86;
+  this.ages.push(mercAge.toFixed(2), venusAge.toFixed(2), marAge.toFixed(2), jupAge.toFixed(2));
   //Begin if statement to choose planet
-
+  }
+  planetChooser(){
   //Begin Mercury
   if (this.planetChoice === 1){
     let message = [];
