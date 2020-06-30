@@ -1,4 +1,13 @@
 import { UserInfo } from './../src/galaxy.js'
+// Begin test for UserInfo
+describe('UserInfo', () => {
+  test('Should fail if ths.age !== 29', () => {
+    let newUser = new UserInfo(29, 1, 75);
+    expect(newUser.age).toEqual(29);
+    expect(newUser.planetChoice).toEqual(1);
+    expect(newUser.lifeExp).toEqual(75);
+  });
+});
 
 //Begin test for ageCalc
 describe('mercAge', () => {
@@ -29,13 +38,11 @@ describe('jupAge', () => {
     expect(newUser.ages[3]).toEqual("2.45");
   });
 });
-
-// Begin test for UserInfo
-describe('UserInfo', () => {
-  test('Should fail if ths.age !== 29', () => {
-    let newUser = new UserInfo(29, 1, 75);
-    expect(newUser.age).toEqual(29);
-    expect(newUser.planetChoice).toEqual(1);
-    expect(newUser.lifeExp).toEqual(75);
+// Begin test for planetChooser
+describe('planetChooser', () => {
+  test('Should return years left to live if age is less than expectancy', () => {
+    let newUser = new UserInfo(29, 1, 10);
+    newUser.planetChooser();
+    expect(newUser.expectancy[0]).toEqual("79.17");
   });
-});
+}); 
