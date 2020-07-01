@@ -42,7 +42,7 @@ describe('jupAge', () => {
 // Begin test for planetChooser
 // Begin test for Mercury
 describe('planetChooser', () => {
-  test('Should return years left to live if age is less than expectancy', () => {
+  test('Should return years lived that exceed life expectancy', () => {
     let newUser = new UserInfo(29, 1, 10);
     newUser.planetChooser();
     expect(newUser.expectancy[0]).toEqual("79.17");
@@ -57,7 +57,7 @@ describe('planetChooser', () => {
 });
 //Begin Test for Venus
 describe('planetChooser', () => {
-  test('Should return years left to live if age is less than expectancy', () => {
+  test('Should return years lived that exceed life expectancy', () => {
     let newUser = new UserInfo(29, 2, 10);
     newUser.planetChooser();
     expect(newUser.expectancy[0]).toEqual("30.65");
@@ -68,5 +68,35 @@ describe('planetChooser', () => {
     let newUser = new UserInfo(29, 2, 45);
     newUser.planetChooser();
     expect(newUser.expectancy[0]).toEqual("25.00");
+  });
+});
+//Begin Test for Mars
+describe('planetChooser', () => {
+  test('Should return years lived that exceed life expectancy', () => {
+    let newUser = new UserInfo(29, 3, 10);
+    newUser.planetChooser();
+    expect(newUser.expectancy[0]).toEqual("10.11");
+  });
+}); 
+describe('planetChooser', () => {
+  test('Should return years left to live if age is less than expectancy', () => {
+    let newUser = new UserInfo(29, 3, 45);
+    newUser.planetChooser();
+    expect(newUser.expectancy[0]).toEqual("8.00");
+  });
+});
+//Begin test for Jupiter
+describe('planetChooser', () => {
+  test('Should return years lived that exceed life expectancy', () => {
+    let newUser = new UserInfo(29, 4, 10);
+    newUser.planetChooser();
+    expect(newUser.expectancy[0]).toEqual("1.60");
+  });
+}); 
+describe('planetChooser', () => {
+  test('Should return years left to live if age is less than expectancy', () => {
+    let newUser = new UserInfo(29, 4, 45);
+    newUser.planetChooser();
+    expect(newUser.expectancy[0]).toEqual("1.00");
   });
 });
