@@ -21,12 +21,13 @@ export class UserInfo {
   planetChooser(){
   //Begin Mercury
   if (this.planetChoice === 1){
-    let lifeRemainder = (this.lifeExp - this.age) / .24;
     if(this.age > this.lifeExp){
       let exceedBy = (this.age - this.lifeExp) / .24;
       this.expectancy.push(exceedBy.toFixed(2));
-    } else if (this.age < this.lifefeExp) {
-      this.expectancy[1].push(lifeRemainder.toFixed(2));
+    } else if (this.age < this.lifeExp) {
+      let lifeRemainder = (this.lifeExp - this.age) / .24;
+      let parsLife = parseInt(lifeRemainder);
+      this.expectancy.push(parsLife.toFixed(2));
     }
   }
   //Begin Venus
@@ -64,6 +65,7 @@ export class UserInfo {
   }
 }
 }
+//
 // message.push(`You would be ${ mercAge.toFixed(2) } years old on Mercury.`);
 // message.push(`Congrats! You've lived ${ exceedBy.toFixed(2) } Mercurial Years longer than expected!`);
 // message.push(`You would be ${ mercAge.toFixed(2) } years old on Mercury.
