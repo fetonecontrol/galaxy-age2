@@ -40,6 +40,7 @@ describe('jupAge', () => {
 });
 
 // Begin test for planetChooser
+// Begin test for Mercury
 describe('planetChooser', () => {
   test('Should return years left to live if age is less than expectancy', () => {
     let newUser = new UserInfo(29, 1, 10);
@@ -52,5 +53,20 @@ describe('planetChooser', () => {
     let newUser = new UserInfo(29, 1, 45);
     newUser.planetChooser();
     expect(newUser.expectancy[0]).toEqual("66.00");
+  });
+});
+//Begin Test for Venus
+describe('planetChooser', () => {
+  test('Should return years left to live if age is less than expectancy', () => {
+    let newUser = new UserInfo(29, 2, 10);
+    newUser.planetChooser();
+    expect(newUser.expectancy[0]).toEqual("30.65");
+  });
+}); 
+describe('planetChooser', () => {
+  test('Should return years left to live if age is less than expectancy', () => {
+    let newUser = new UserInfo(29, 2, 45);
+    newUser.planetChooser();
+    expect(newUser.expectancy[0]).toEqual("25.00");
   });
 });

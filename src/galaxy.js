@@ -32,35 +32,36 @@ export class UserInfo {
   }
   //Begin Venus
   else if (this.planetChoice === 2){
-    let message = [];
     let lifeRemainder = (this.lifeExp - this.age) / .62;
     if(this.age > this.lifeExp){
       let exceedBy = (this.age - this.lifeExp) / .62;
-      return venusAge;
-    } else if ( this.age < this.lifeExp) {
-      return venusAge;
+      this.expectancy.push(exceedBy.toFixed(2));
+    } else if (this.age < this.lifeExp) {
+      let lifeRemainder = (this.lifeExp - this.age) / .62;
+      let parsLife = parseInt(lifeRemainder);
+      this.expectancy.push(parsLife.toFixed(2));
     }
   }
   //Begin Mars
   else if (this.planetChoice === 3){
-    let message = [];
-    let lifeRemainder = (this.lifeExp - this.age) / 1.88;
     if(this.age > this.lifeExp){
       let exceedBy = (this.age - this.lifeExp) / 1.88;
-      return marAge;
-    } else if ( this.age < this.lifeExp) {
-      return marAge;
+      this.expectancy.push(exceedBy.toFixed(2));
+    } else if (this.age < this.lifeExp) {
+      let lifeRemainder = (this.lifeExp - this.age) / 1.88;
+      let parsLife = parseInt(lifeRemainder);
+      this.expectancy.push(parsLife.toFixed(2));
     }
   }
   //Begin Jupiter
   else if (this.planetChoice === 4){
-    let message = [];
-    let lifeRemainder = (this.lifeExp - this.age) / 11.86;
     if(this.age > this.lifeExp){
       let exceedBy = (this.age - this.lifeExp) / 11.86;
-      return jupAge;
+      this.expectancy.push(exceedBy.toFixed(2));
     } else if ( this.age < this.lifeExp) {
-      return jupAge;
+      let lifeRemainder = (this.lifeExp - this.age) / 11.86;
+      let parsLife = parseInt(lifeRemainder);
+      this.expectancy.push(parsLife.toFixed(2));
     }
   }
 }
