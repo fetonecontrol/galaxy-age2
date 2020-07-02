@@ -32,7 +32,6 @@ export class UserInfo {
   }
   //Begin Venus
   else if (this.planetChoice === 2){
-    let lifeRemainder = (this.lifeExp - this.age) / .62;
     if(this.age > this.lifeExp){
       let exceedBy = (this.age - this.lifeExp) / .62;
       this.expectancy.push(exceedBy.toFixed(2));
